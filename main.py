@@ -5,13 +5,14 @@ year = input("Enter Year\n")
 yeari, yearv = None, None
 try:
 	yeari = int(year)
+
 except Exception as e:
 	print("Could not convert."+str(e))
 if yeari is not None:
 
 	if yeari < 1900:
 		print("Year must be greater than 1900")
-	elif yeari > 2020:
+	elif yeari > (datetime.now().year):
 		print("Year must be lesser than 2020")
 		#print("Valid Year")
 	else:
@@ -128,7 +129,7 @@ else:
 	print("Second "+seconds+" is invalid")
 
 if(yearv == 1 and monthv ==1 and datev == 1 and hourv ==1 and minutesv ==1 and secondsv ==1):
-    timestamp = datetime(yeari, monthi, datei, houri, minutesi, secondsi)
-    print("Timestamp from User is ", timestamp)
+	timestamp = datetime(yeari, monthi, datei, houri, minutesi, secondsi)
+	print("Timestamp from User is ", timestamp)
 else:
-    print("Entered Datetime details are invalid...")
+	print("Entered Datetime details are invalid...")
