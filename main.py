@@ -5,8 +5,8 @@ year = input("Enter Year\n")
 yeari, yearv = None, None
 try:
 	yeari = int(year)
-except:
-	pass
+except Exception as e:
+	print("Could not convert."+str(e))
 if yeari is not None:
 
 	if yeari < 1900:
@@ -25,8 +25,8 @@ month = input("Enter Month\n")
 monthi, monthv = None, None
 try:
 	monthi = int(month)
-except:
-	pass
+except Exception as e:
+	print("Could not convert." + str(e))
 if monthi is not None:
 
 	if monthi < 1:
@@ -44,8 +44,8 @@ date = input("Enter Date\n")
 datei, datev = None, None
 try:
 	datei = int(date)
-except:
-	pass
+except Exception as e:
+	print("Could not convert."+str(e))
 if datei is not None:
 
 	if datei < 1:
@@ -75,8 +75,8 @@ hour = input("Enter Hour\n")
 houri, hourv = None, None
 try:
 	houri = int(hour)
-except:
-	pass
+except Exception as e:
+	print("Could not convert." + str(e))
 if houri is not None:
 
 	if houri < 1:
@@ -94,8 +94,8 @@ minutes = input("Enter Minutes\n")
 minutesi, minutesv = None, None
 try:
 	minutesi = int(minutes)
-except:
-	pass
+except Exception as e:
+	print("Could not convert." + str(e))
 if minutesi is not None:
 
 	if minutesi < 1:
@@ -113,8 +113,8 @@ seconds = input("Enter Seconds\n")
 secondsi, secondsv = None, None
 try:
 	secondsi = int(seconds)
-except:
-	pass
+except Exception as e:
+	print("Could not convert." + str(e))
 if secondsi is not None:
 
 	if secondsi < 1:
